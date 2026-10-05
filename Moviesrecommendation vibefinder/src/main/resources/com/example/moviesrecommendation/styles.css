@@ -1,0 +1,121 @@
+.root {
+    -fx-background-color: #141414;
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.header {
+    -fx-background-color: rgba(0, 0, 0, 0.85);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 5);
+}
+
+.app-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #e50914;
+    -fx-font-weight: bold;
+}
+
+/* Search Bar Styles */
+.search-container { -fx-background-color: rgba(51, 51, 51, 0.8); -fx-background-radius: 20px; -fx-padding: 0 10px; }
+.search-icon { -fx-text-fill: #888; -fx-font-size: 16px; -fx-padding: 0 5px 0 0; -fx-cursor: hand; }
+.search-input { -fx-background-color: transparent; -fx-text-fill: white; -fx-prompt-text-fill: #888; -fx-padding: 8px 5px; }
+
+/* Search Suggestions Popup */
+.search-popup { -fx-background-color: rgba(51, 51, 51, 0.95); -fx-background-radius: 5px; -fx-padding: 5px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 5); }
+.search-popup .menu-item { -fx-padding: 8px 12px; }
+.search-popup .menu-item:hover { -fx-background-color: #444; }
+.search-popup .menu-item .label { -fx-text-fill: white; -fx-font-size: 14px; }
+
+/* Sidebar Styles */
+.sidebar { -fx-background-color: rgba(24, 24, 24, 0.85); -fx-min-width: 220px; }
+
+/* --- Movies/Series Toggle (Minimalist Underline Style) --- */
+.media-toggle-bar {
+    -fx-padding: 15px;
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+.media-toggle-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0;
+    -fx-cursor: hand;
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-width: 3px;
+}
+
+.media-toggle-button:selected {
+    -fx-text-fill: white;
+    -fx-border-color: transparent transparent #e50914 transparent;
+}
+/* --- End Movies/Series Toggle --- */
+
+.sidebar-button { -fx-background-color: transparent; -fx-text-fill: #b3b3b3; -fx-font-size: 14px; -fx-alignment: center-left; -fx-padding: 8px 15px; -fx-cursor: hand; -fx-background-radius: 5px; }
+.sidebar-button:hover { -fx-background-color: rgba(51, 51, 51, 0.8); -fx-text-fill: white; }
+
+/* Accordion Styles */
+.accordion-transparent { -fx-background-color: transparent; }
+.titled-pane-transparent > .title { -fx-background-color: transparent; -fx-border-color: transparent; }
+.titled-pane-transparent > .title > .arrow-button .arrow { -fx-background-color: #e5e5e5; }
+.titled-pane-transparent > .title > .text { -fx-fill: #e5e5e5; -fx-font-size: 16px; -fx-font-weight: normal; }
+.titled-pane-transparent:hover > .title { -fx-background-color: rgba(51, 51, 51, 0.8); }
+.titled-pane-transparent > .content { -fx-background-color: #181818; -fx-padding: 0; }
+.sidebar-scroll { -fx-background-color: transparent; }
+.sidebar-scroll > .viewport { -fx-background-color: transparent; }
+
+/* Vibe Finder Button */
+.vibe-finder-button { -fx-background-color: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-padding: 8px 16px; -fx-background-radius: 20px; -fx-cursor: hand; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2); }
+.vibe-finder-button:hover { -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+
+.welcome-text { -fx-font-size: 28px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, black, 5, 0, 0, 0); }
+.welcome-subtext { -fx-font-size: 16px; -fx-text-fill: #dddddd; -fx-effect: dropshadow(gaussian, black, 3, 0, 0, 0); }
+
+/* --- VibeFinder Tabs (Restored Pill Style) --- */
+.vibe-finder-root { -fx-background-color: transparent; }
+.vibe-title { -fx-font-size: 36px; -fx-text-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, black, 5, 0, 0, 0); }
+.vibe-subtitle { -fx-font-size: 20px; -fx-text-fill: #cccccc; -fx-effect: dropshadow(gaussian, black, 3, 0, 0, 0); }
+
+.vibe-tab-pane { -fx-background-color: transparent; }
+.vibe-tab-pane .tab-header-area {
+    -fx-padding: 10 0 20 0;
+}
+.vibe-tab-pane .tab-header-background {
+    -fx-background-color: #333;
+    -fx-background-radius: 25px;
+}
+.vibe-tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8px 20px;
+    -fx-background-radius: 25px;
+}
+.vibe-tab-pane .tab:selected {
+    -fx-background-color: #e50914;
+}
+.vibe-tab-pane .tab .tab-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.vibe-tab-pane .tab-content-area {
+    -fx-background-color: transparent;
+    -fx-padding: 20px 0 0 0;
+}
+/* --- End VibeFinder Tabs --- */
+
+.vibe-button { -fx-background-color: rgba(51, 51, 51, 0.9); -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 15px; -fx-background-radius: 10px; -fx-cursor: hand; -fx-alignment: center; }
+.vibe-button:hover { -fx-background-color: rgba(68, 68, 68, 0.95); -fx-border-color: #e50914; -fx-border-width: 2px; -fx-border-radius: 10px; }
+.vibe-cancel-button { -fx-background-color: transparent; -fx-text-fill: #aaa; -fx-font-size: 16px; -fx-cursor: hand; -fx-border-color: #aaa; -fx-border-radius: 20px; -fx-padding: 8px 20px; }
+.vibe-cancel-button:hover { -fx-text-fill: white; -fx-border-color: white; -fx-background-color: rgba(255, 255, 255, 0.1); }
+
+/* Movie Card Styles */
+.movie-card { -fx-background-color: rgba(31, 31, 31, 0.95); -fx-background-radius: 8px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 3); -fx-padding: 10px; -fx-spacing: 8px; }
+.movie-card:hover { -fx-scale-x: 1.02; -fx-scale-y: 1.02; -fx-background-color: #2a2a2a; }
+.poster-image { -fx-background-radius: 5px; }
+.movie-title { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: white; -fx-min-height: 20px; }
+.movie-meta { -fx-font-size: 12px; -fx-text-fill: #b3b3b3; -fx-font-weight: bold; }
+.movie-overview { -fx-font-size: 12px; -fx-text-fill: #d3d3d3; -fx-min-height: 60px; }
+.button-box { -fx-alignment: center; -fx-padding: 5px 0 0 0; }
+.action-button { -fx-background-color: #444; -fx-text-fill: white; -fx-font-size: 11px; -fx-padding: 6px 12px; -fx-background-radius: 4px; -fx-cursor: hand; -fx-font-weight: bold; }
+.action-button:hover { -fx-background-color: #e50914; }
